@@ -1,0 +1,29 @@
+.button {
+  position: relative;
+  padding: 10px 40px;
+  background: transparent;
+  border: none;
+  color: var(--colors-button-primary);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: var(--clamp-base);
+}
+
+.button::before,
+.button::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--clamp-bm);
+}
+
+.button::before {
+  content: "[";
+  left: 10px;
+}
+
+.button::after {
+  content: "]";
+  right: 10px;
+}

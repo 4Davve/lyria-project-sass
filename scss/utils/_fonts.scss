@@ -1,0 +1,35 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Anton SC';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/anton-sc-v1-latin-regular.woff2') format('woff2'),
+    url('../font/anton-sc-v1-latin-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/anton-v27-latin-regular.woff2') format('woff2'),
+    url('../font/anton-v27-latin-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/inter-v20-latin-regular.woff2') format('woff2'),
+    url('../font/inter-v20-latin-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../font/inter-v20-latin-500.woff2') format('woff2'),
+    url('../font/inter-v20-latin-500.ttf') format('truetype');
+}

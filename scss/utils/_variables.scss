@@ -1,0 +1,34 @@
+:root {
+  --colors-text-title-dark: #010314;
+  --colors-text-title-blue: #bbdbfa;
+  --colors-text-primary: #ffffff;
+  --colors-text-body: #bbb;
+
+  --colors-button-primary: #ffffff;
+  --colors-hover: #bbdbfa;
+
+  --colors-outline-soft: #343543;
+
+  --bg-blue-primary: #bbdbfa;
+  --bg-black-primary: #010314;
+
+  --container-width: 1440px;
+  --container-padding-x: 30px;
+  --container-padding-header-x: 32px;
+
+  --transition-duration: 0.2s;
+  --header-height: 84px;
+
+  --font-family-base: "Inter", sans-serif;
+  --font-family-accent: "Anton SC", sans-serif;
+  --font-family-third: "Anton", sans-serif;
+
+  --clamp-sm:  clamp(8px, 1vw, 14px);
+  --clamp-base: clamp(10px ,1vw, 16px);
+  --clamp-bm: clamp(10px, 1.66vw, 24px);
+  --clamp-md: clamp(18px, 2vw, 30px);
+  --clamp-lg: clamp(43px, 5vw, 72px);
+  --clamp-xl: clamp(0.9rem, 0.225rem + 2.25vw, 2.25rem);
+  --clamp-xxl: clamp(256px, 29.65vw, 427px);
+  --clamp-xxxl: clamp(306px, 53.12vw, 765px);
+}
