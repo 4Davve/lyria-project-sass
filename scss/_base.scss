@@ -91,7 +91,8 @@ a {
   transition: var(--transition-duration) ease;
 }
 
-a:hover {
+a:hover,
+button:hover {
   color: var(--colors-hover);
 }
 

@@ -8,6 +8,11 @@
   text-transform: uppercase;
   white-space: nowrap;
   font-size: var(--clamp-base);
+  transition: transform var(--transition-duration) ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
 }
 
 .button::before,

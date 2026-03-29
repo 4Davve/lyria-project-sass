@@ -6,6 +6,7 @@
 
   --colors-button-primary: #ffffff;
   --colors-hover: #bbdbfa;
+  --colors-logo-hover: #d5e8fb;
 
   --colors-outline-soft: #343543;
 
@@ -29,6 +30,6 @@
   --clamp-md: clamp(18px, 2vw, 30px);
   --clamp-lg: clamp(43px, 5vw, 72px);
   --clamp-xl: clamp(0.9rem, 0.225rem + 2.25vw, 2.25rem);
-  --clamp-xxl: clamp(256px, 29.65vw, 427px);
+  --clamp-xxl: clamp(196px, 29.65vw, 427px);
   --clamp-xxxl: clamp(306px, 53.12vw, 765px);
 }

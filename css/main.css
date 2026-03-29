@@ -33,6 +33,7 @@
   --colors-text-body: #bbb;
   --colors-button-primary: #ffffff;
   --colors-hover: #bbdbfa;
+  --colors-logo-hover: #d5e8fb;
   --colors-outline-soft: #343543;
   --bg-blue-primary: #bbdbfa;
   --bg-black-primary: #010314;
@@ -50,7 +51,7 @@
   --clamp-md: clamp(18px, 2vw, 30px);
   --clamp-lg: clamp(43px, 5vw, 72px);
   --clamp-xl: clamp(0.9rem, 0.225rem + 2.25vw, 2.25rem);
-  --clamp-xxl: clamp(256px, 29.65vw, 427px);
+  --clamp-xxl: clamp(196px, 29.65vw, 427px);
   --clamp-xxxl: clamp(306px, 53.12vw, 765px);
 }
 
@@ -154,7 +155,8 @@ a {
   transition: var(--transition-duration) ease;
 }
 
-a:hover {
+a:hover,
+button:hover {
   color: var(--colors-hover);
 }
 
@@ -282,6 +284,55 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--colors-text-title-blue);
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  -webkit-transition: color var(--transition-duration) ease;
+  transition: color var(--transition-duration) ease;
+}
+.header__logo-link:hover {
+  color: var(--colors-logo-hover);
+}
+@media screen and (max-width: 480px) {
+  .header__logo-link {
+    font-size: 25px;
+  }
+}
+.header__burger {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+@media screen and (max-width: 480px) {
+  .header__burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.header__burger-line {
+  width: 100%;
+  height: 2px;
+  background: var(--colors-text-primary);
+  -webkit-transition: all var(--transition-duration) ease;
+  transition: all var(--transition-duration) ease;
+}
+.header__nav {
+  display: block;
+}
+@media screen and (max-width: 480px) {
+  .header__nav {
+    display: none;
+    cursor: pointer;
+  }
 }
 .header__unlist {
   display: -webkit-box;
@@ -355,6 +406,32 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   margin-bottom: 94px;
   z-index: 2;
+  cursor: default;
+}
+.hero-section-title span {
+  opacity: 0;
+  -webkit-animation: fadeIn 1.5s forwards;
+          animation: fadeIn 1.5s forwards;
+}
+.hero-section-title span:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.hero-section-title span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.hero-section-title span:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.hero-section-title span:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.hero-section-title span:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 @media screen and (max-width: 1444px) {
   .hero-section-title {
@@ -388,15 +465,55 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   width: 424px;
+  cursor: default;
+}
+@media screen and (max-width: 480px) {
+  .hero-section-description {
+    text-align: center;
+    width: 334px;
+  }
 }
 .hero-section-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   position: relative;
   gap: 40px;
 }
+@media screen and (max-width: 768px) {
+  .hero-section-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5px;
+  }
+}
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .button {
   position: relative;
   padding: 10px 40px;
@@ -407,6 +524,14 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   white-space: nowrap;
   font-size: var(--clamp-base);
+  -webkit-transition: -webkit-transform var(--transition-duration) ease;
+  transition: -webkit-transform var(--transition-duration) ease;
+  transition: transform var(--transition-duration) ease;
+  transition: transform var(--transition-duration) ease, -webkit-transform var(--transition-duration) ease;
+}
+.button:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .button::before,

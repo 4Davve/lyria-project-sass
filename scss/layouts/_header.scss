@@ -22,6 +22,46 @@
     letter-spacing: -0.03em;
     color: var(--colors-text-title-blue);
     flex-shrink: 0;
+    transition: color var(--transition-duration) ease;
+
+    &:hover {
+      color: var(--colors-logo-hover);
+    }
+    @media screen and (max-width: bp.$mobile) {
+      font-size: 25px;
+    }
+  }
+
+  &__burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    @media screen and (max-width: bp.$mobile) {
+      display: flex;
+    }
+
+    &-line {
+      width: 100%;
+      height: 2px;
+      background: var(--colors-text-primary);
+      transition: all var(--transition-duration) ease;
+    }
+  }
+
+  &__nav {
+    display: block;
+
+    @media screen and (max-width: bp.$mobile) {
+      display: none;
+      cursor: pointer;
+    }
   }
 
   &__unlist {
