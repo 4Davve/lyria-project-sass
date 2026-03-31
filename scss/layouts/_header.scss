@@ -17,7 +17,7 @@
   &__logo-link {
     font-family: var(--font-family-accent);
     font-weight: 400;
-    font-size: var(--clamp-md);
+    font-size: 30px;
     line-height: 1.2;
     letter-spacing: -0.03em;
     color: var(--colors-text-title-blue);
@@ -86,7 +86,7 @@
   &__list-link {
     font-family: var(--font-family-base);
     font-weight: 500;
-    font-size: var(--clamp-sm);
+    font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.16em;
     white-space: nowrap;
