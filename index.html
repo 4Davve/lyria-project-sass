@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <script src="./js/mobile-menu.js" defer></script>
+    <script src="./js/burger-menu.js" defer></script>
     <title>Lyria</title>
   </head>
   <body>
@@ -70,34 +70,51 @@
         </div>
       </section>
     </main>
-    <div class="slider" hidden>
-      <div class="slider__main">
-        <div class="slider__header">
-          <div class="slider__header-block">
-            <a class="slider__logo-link" href="#">lyria</a>
-            <button class="slider__btn-close" aria-label="Close menu">
+    <div class="burger-menu" hidden>
+      <div class="burger-menu__container">
+        <div class="burger-menu__header">
+          <div class="burger-menu__header-block">
+            <a class="burger-menu__logo-link" href="#">lyria</a>
+            <button class="burger-menu__btn-close" aria-label="Close menu">
               <span></span>
               <span></span>
             </button>
           </div>
         </div>
-        <div class="slider__menu">
-          <nav class="slider__nav">
-            <ul class="slider__unlist">
-              <li class="slider__list">
-                <a class="slider__list-link" href="#">home</a>
+        <div class="burger-menu__main">
+          <nav class="burger-menu__nav">
+            <ul class="burger-menu__unlist">
+              <li class="burger-menu__list">
+                <a class="burger-menu__list-link" href="#">home</a>
               </li>
-              <li class="slider__list">
-                <a class="slider__list-link" href="#">about us</a>
+              <li class="burger-menu__list">
+                <a class="burger-menu__list-link" href="#">about us</a>
               </li>
-              <li class="slider__list">
-                <a class="slider__list-link" href="#">contact us</a>
-              </li>
-              <li class="slider__list">
-                <a class="slider__list-link" href="#">menu</a>
+              <li class="burger-menu__list">
+                <a class="burger-menu__list-link" href="#">contact us</a>
               </li>
             </ul>
           </nav>
+        </div>
+        <div class="burger-menu__social">
+          <button class="burger-menu__social-spotify">
+            <svg class="icon-spotify" width="16" height="16">
+              <use href="assets/social/sprite.svg#icon-spotify"></use>
+            </svg>
+            spotify
+          </button>
+          <button class="burger-menu__social-apple">
+            <svg class="icon-apple-music" width="16" height="16">
+              <use href="assets/social/sprite.svg#icon-apple-music"></use>
+            </svg>
+            apple podcast
+          </button>
+          <button class="burger-menu__social-youtube">
+            <svg class="icon-youtube" width="16" height="16">
+              <use href="assets/social/sprite.svg#icon-youtube"></use>
+            </svg>
+            youtube
+          </button>
         </div>
       </div>
     </div>
