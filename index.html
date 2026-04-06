@@ -34,9 +34,29 @@
     </header>
 
     <main>
-      <section class="hero-section">
+      <section class="hero">
+        <div class="hero-container container">
+          <h1 class="hero__title title-big">
+            <span>l</span><span>y</span><span>r</span><span>i</span
+            ><span>a</span>
+          </h1>
+          <div class="hero__block">
+            <div class="hero__description paragraph">
+              <p>
+                Unrehearsed. Unscripted. Unpredictable. A home for the sonic
+                adventurers and the stories that linger after the last note
+                fades
+              </p>
+            </div>
+            <div class="hero__menu">
+              <button class="button">spotify</button>
+              <button class="button">apple podcast</button>
+              <button class="button">youtube</button>
+            </div>
+          </div>
+        </div>
         <video
-          class="hero-section-video-bg"
+          class="hero__video-bg"
           autoplay
           muted
           loop
@@ -46,26 +66,60 @@
           <source src="./img/lyria-hero.mp4" type="video/mp4" />
           <source src="./img/lyria-hero.webm" type="video/webm" />
         </video>
-        <!-- <img
-          class="hero-section-image"
-          src="./img/lyria-hero.jpg"
-          alt="lyria artist"
-          loading="lazy"
-        /> -->
-        <h1 class="hero-section-title title-big">
-          <span>l</span><span>y</span><span>r</span><span>i</span><span>a</span>
-        </h1>
-        <div class="hero-section-block">
-          <div class="hero-section-description paragraph">
-            <p>
-              Unrehearsed. Unscripted. Unpredictable. A home for the sonic
-              adventurers and the stories that linger after the last note fades
-            </p>
-          </div>
-          <div class="hero-section-menu">
-            <button class="button">spotify</button>
-            <button class="button">apple podcast</button>
-            <button class="button">youtube</button>
+      </section>
+      <section class="about">
+        <div class="about__container container">
+          <div class="about__main">
+            <div class="about__label">
+              <p class="about__label--text">About your host</p>
+            </div>
+            <div class="about__description">
+              <h2 class="about__title">
+                After 10 years coaching podcasters and musicians,
+                <span class="about__title--secondary">
+                  he's still nerding out about how sound connects us.
+                </span>
+              </h2>
+            </div>
+            <div class="about__info">
+              <div class="about__years">
+                <p class="about__years-paragraph">2015</p>
+              </div>
+              <div class="about__card about__card--primary">
+                <img
+                  class="about__photo-primary"
+                  srcset="
+                    ./img/coach-producer/coach-producer-primary.webp    1x,
+                    ./img/coach-producer/coach-producer-primary@2x.webp 2x
+                  "
+                  src="./img/coach-producer/coach-producer-primary.webp"
+                  alt="Musical Producer"
+                  width="424"
+                  height="456"
+                  loading="lazy"
+                />
+                <p class="about__text paragraph">
+                  A former NPR producer, he now blends investigative journalism
+                  with cinematic sound design, creating podcasts that linger
+                  like a half-remembered melody.
+                </p>
+                <button class="button">learn more</button>
+              </div>
+              <div class="about__card about__card--secondary">
+                <img
+                  class="about__photo-second"
+                  srcset="
+                    ./img/coach-producer/coach-producer-second.webp    1x,
+                    ./img/coach-producer/coach-producer-second@2x.webp 2x
+                  "
+                  src="./img/coach-producer/coach-producer-second.webp"
+                  alt="Musical Producer"
+                  width="312"
+                  height="255"
+                  loading="lazy"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

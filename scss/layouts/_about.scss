@@ -1,0 +1,142 @@
+@use "../utils/breakpoints" as bp;
+
+.about {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-black-primary);
+  min-height: 1190px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  &__main {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+
+    @media screen and (max-width: bp.$mobile) {
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 40px;
+    }
+  }
+
+  &__description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__label {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    @media screen and (max-width: bp.$mobile) {
+      position: relative;
+    }
+
+    &--text {
+      font-family: var(--font-family-base);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.16em;
+      color: var(--colors-text-primary);
+      padding: 8px 0;
+      height: 40px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(100%, 760px);
+    font-size: 72px;
+
+    @media screen and (max-width: bp.$mobile) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      font-size: 42px;
+    }
+
+    &--secondary {
+      position: relative;
+      left: 150px;
+      height: 172px;
+
+      @media screen and (max-width: bp.$mobile) {
+        left: 0;
+        height: auto;
+      }
+    }
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    gap: 24px;
+    align-items: flex-start;
+    width: 100%;
+
+    @media screen and (max-width: bp.$tablet) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: bp.$mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__years {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 393px;
+    height: 220px;
+    padding: 24px;
+    background-color: var(--colors-text-title-blue);
+    &-paragraph {
+      font-family: var(--font-family-accent);
+      font-size: 200px;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      color: var(--colors-text-title-dark);
+
+      @media screen and (max-width: bp.$mobile) {
+        font-size: 175px;
+        letter-spacing: 0;
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    width: min(100%, 424px);
+    &--secondary {
+    }
+  }
+
+  &__photo-primary {
+    width: 100%;
+  }
+
+  &__photo-second {
+    @media screen and (max-width: bp.$mobile) {
+      display: none;
+    }
+  }
+
+  &__text {
+  }
+}

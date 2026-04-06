@@ -1,20 +1,21 @@
-@use './utils/breakpoints' as bp;
+@use "./utils/breakpoints" as bp;
 
-@use './utils/fonts';
+@use "./utils/fonts";
 // @use './utils/mixin';
 // @use './utils/texts';
 // @use './utils/utils';
-@use './utils/variables';
-@use './utils/text-uppercase';
+@use "./utils/variables";
+@use "./utils/text-uppercase";
 
-@use './base';
+@use "./base";
 
-@use './layouts/container';
+@use "./layouts/container";
 // @use './layouts/footer';
-@use './layouts/header';
-@use './layouts/hero-section';
+@use "./layouts/header";
+@use "./layouts/hero-section";
+@use "./layouts/about";
 
-@use './components/buttons';
-@use './components/burger-menu';
+@use "./components/buttons";
+@use "./components/burger-menu";
 // @use './components/input';
 // @use './components/links';
