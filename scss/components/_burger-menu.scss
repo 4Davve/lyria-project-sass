@@ -28,8 +28,9 @@
       height: 100dvw;
       min-height: 100%;
       background: rgba(1, 3, 20, 0.75);
-      padding: 32px;
+      padding-inline: 32px;
       padding-top: 0px;
+      padding-bottom: 84px;
       transform: translateX(100%);
       transition: transform var(--transition-duration) ease;
       gap: 20px;
@@ -118,29 +119,32 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 15px;
+      gap: 5px;
       margin-top: auto;
-
 
       &-spotify,
       &-apple,
       &-youtube {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
         width: 80%;
-        position: relative;
-        white-space: nowrap;
-        font-size: 12px;
-        padding: 13px 30px;
-        background: transparent;
-        border: 1px solid;
-        border-color: rgba($color: #343543, $alpha: 0.3);
-        border-radius: 20px;
-        text-transform: uppercase;
-        letter-spacing: 3px;
+        font-size: var(--clamp-base);
         color: var(--colors-button-primary);
+        letter-spacing: 3px;
+        white-space: nowrap;
+        border: 1px solid;
+        border-color: transparent;
+        padding: 10px 40px;
+        gap: 10px;
+        text-transform: uppercase;
+        background: transparent;
+        transition: transform var(--transition-duration) ease;
+
+        &:hover {
+          transform: scale(1.03);
+        }
       }
     }
   }
